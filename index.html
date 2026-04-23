@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1" />
+    <meta name="theme-color" content="#FFD700" />
+    <meta name="description" content="Africa's Premier Community Savings App — Susu circles for everyone" />
+
+    <!-- PWA iOS Support -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="SusuPay" />
+    <link rel="apple-touch-icon" href="/icon-192.png" />
+    <link rel="apple-touch-startup-image" href="/icon-512.png" />
+
+    <!-- PWA Android / General -->
+    <link rel="icon" type="image/png" href="/icon-192.png" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="SusuPay — Community Savings" />
+    <meta property="og:description" content="Africa's Premier Digital Susu Platform" />
+    <meta property="og:image" content="/icon-512.png" />
+    <meta property="og:type" content="website" />
+
+    <!-- Safe area for notched phones -->
+    <style>
+      :root {
+        --sat: env(safe-area-inset-top);
+        --sab: env(safe-area-inset-bottom);
+        --sal: env(safe-area-inset-left);
+        --sar: env(safe-area-inset-right);
+      }
+      * { -webkit-tap-highlight-color: transparent; }
+      body {
+        margin: 0;
+        padding-top: var(--sat);
+        padding-bottom: var(--sab);
+        overscroll-behavior-y: none;
+        -webkit-overflow-scrolling: touch;
+      }
+    </style>
+
+    <title>SusuPay — Community Savings</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
